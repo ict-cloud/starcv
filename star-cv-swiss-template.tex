@@ -1,0 +1,250 @@
+\documentclass[10.5pt,a4paper]{article}
+
+% ---------- Layout ----------
+\usepackage[a4paper,top=1.85cm,bottom=1.85cm,left=2.2cm,right=2.1cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[nswissgerman]{babel}
+\usepackage{graphicx}
+
+% ---------- Sans-serif, Arial-like font ----------
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{microtype}
+
+\usepackage{enumitem}
+\usepackage{hyperref}
+\hypersetup{colorlinks=false, pdfborder={0 0 0}}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\pagestyle{empty}
+
+% ---------- Column width for the date / left label ----------
+\newlength{\datewidth}
+\setlength{\datewidth}{3.6cm}
+
+% ---------- Helper commands ----------
+
+% Bold company-level header, e.g. dates + company name (spans several roles)
+\newcommand{\companyheader}[2]{%
+  \par\noindent\makebox[\datewidth][l]{\textbf{#1}}\textbf{#2}\par
+}
+
+% Regular single-line entry: dates + role/company text
+\newcommand{\entryline}[2]{%
+  \par\noindent\makebox[\datewidth][l]{#1}#2\par
+}
+
+% Regular entry with a second indented line (role title line 1, company/location line 2)
+\newcommand{\entrytwoline}[3]{%
+  \par\noindent\makebox[\datewidth][l]{#1}#2\par
+  \noindent\makebox[\datewidth][l]{}#3\par
+}
+
+% Regular entry with a third indented line
+\newcommand{\entrythreeline}[4]{%
+  \par\noindent\makebox[\datewidth][l]{#1}#2\par
+  \noindent\makebox[\datewidth][l]{}#3\par
+  \noindent\makebox[\datewidth][l]{}#4\par
+}
+
+% Italic company / department description
+\newcommand{\companydesc}[1]{\vspace{2pt}\textit{#1}\par}
+
+% Section header (Ausbildung, Weiterbildung, Sprachen)
+\newcommand{\sectionhead}[1]{\vspace{10pt}\noindent\textbf{#1}\par\vspace{2pt}}
+
+% Tight bullet list
+\newenvironment{tightlist}{%
+  \begin{itemize}[leftmargin=1.1em,itemsep=0pt,topsep=4pt,parsep=0pt,partopsep=0pt,label=\textbullet]
+}{%
+  \end{itemize}
+}
+
+% Small vertical gaps between blocks
+\newcommand{\blockgap}{\vspace{8pt}}
+\newcommand{\smallgap}{\vspace{4pt}}
+
+\begin{document}
+
+% ================= HEADER =================
+\noindent\begin{minipage}[t]{\dimexpr\textwidth-2.6cm\relax}
+\vspace{0pt}% top-align with the photo box
+{\LARGE\bfseries Max Muster}\par
+\smallgap
+Head of Division\par
+Master of Arts in Wirtschaftsinformatik und Betriebswirtschaft \textbar\ Universität Musterstadt\par
+\blockgap
+max.muster@example.com \textbar\ +41 00 000 00 00 \textbar\ Musterstrasse 1, 0000 Musterort\par
+*1. Januar 1980, Schweizer Staatsbürger\par
+\end{minipage}\hfill
+\begin{minipage}[t]{2.5cm}
+\vspace{0pt}% top edge of the box is the reference point
+\raggedleft
+% Platzhalter für das Foto -- ersetzen durch:
+% \includegraphics[width=2.2cm,height=2.8cm]{foto.jpg}
+\fbox{\parbox[c][2.8cm][c]{2.2cm}{\centering Foto}}
+\end{minipage}
+\blockgap
+
+\begin{tightlist}
+  \item S: Transformationsleiter mit 15+ Jahren IT in Finanz, Verwaltung und regulierten Branchen
+  \item T: DXP: souveräner Betrieb und Migration zu Cloud-nativen Architekturen
+  \item R: Betrieb und Infrastruktur: kritische und vertrauliche Workloads mit 99,7\,\% Verfügbarkeit und mehr
+\end{tightlist}
+
+\blockgap
+
+% ================= NORDWIND GROUP =================
+\companyheader{04.2023 -- heute}{Nordwind Group}
+\entrytwoline{01.2026 -- heute}{Head of Division}{Nordwind Digital Services AG, Basel}
+\companydesc{Die Nordwind Digital Services AG entwickelt digitale Lösungen für öffentliche und private Kunden.}
+
+\begin{tightlist}
+  \item S: Mitglied der Divisionsleitung; gestalte die Technologiestrategie mit
+  \item S: 4 Anbieter, 3 QRX-Knoten im Betrieb (über 55\,\% des nationalen QRX-Volumens)
+  \item T: Verantworte Betrieb, Kosten, Qualität und Compliance der Plattform
+  \item T: Führe ein gemischtes Engineering-Team inkl. Externen (bis zu 25 FTE)
+  \item T: Treibe die Transformation von On-Premise zu Cloud-Architektur voran
+  \item A: Integrierte die Services zu einem einheitlichen DXP-Stack
+  \item A: Baute mit externen Partnern Cloud-Plattformservices bei einem Hyperscaler auf
+  \item A: Führte SRE-Praktiken und das Team-Topologies-Modell ein
+  \item R: Erreichte 99,7\,\% Verfügbarkeit ohne massgebliche SLA-Verletzungen
+\end{tightlist}
+
+\blockgap
+
+\entryline{09.2024 -- 12.2025}{Cluster Lead DXP, Nordwind Digital Services AG, Basel}
+
+\begin{tightlist}
+  \item S: Leitete den Cluster DXP mit Berichtslinie an den CIO Digital Services
+  \item S: Betrieb der Plattform für 5 VNX-Knoten (über 80\,\% des QRX-Markts)
+  \item T: Vertrat den Cluster gegenüber Group IT und externen Stakeholdern
+  \item T: Beriet die Divisionsleitung in Technologiefragen
+  \item T: Leitete die strategische und finanzielle Planung des Clusters
+  \item A: Definierte Technologievision und strategische Ziele des Clusters
+  \item A: Führte bis zu 35 FTE mit dem People \& Transformation Manager
+  \item A: Unterstützte die Migration von 2 VNX-Knoten auf eine andere Plattform
+  \item R: Stellte die Einhaltung von ISO 27001 und ZLA sicher
+  \item R: Erzielte jährlich 15\,\% Kosteneffizienzgewinne
+\end{tightlist}
+
+\blockgap
+
+\entrytwoline{04.2023 -- 08.2024}{Integration Team Lead @ Solution Digital Payments, Quantum Pay AG, Luzern}{}
+\vspace{-8pt}
+\companydesc{Die Solution Digital Payments der IT-Division entwickelt und betreibt die Services für Kartentransaktionen.}
+
+\begin{tightlist}
+  \item S: Schwankende Lieferqualität; Prüfungslücke im Payment-Testing
+  \item T: Verantwortete Sicherstellung und Verbesserung der Lieferqualität
+  \item A: Baute das QS-Team auf und stellte die PCI-DSS-Compliance im DevOps-Umfeld sicher
+  \item A: Trieb den Shift-Left in der Cloud-Architektur voran
+  \item A: Besetzte die Rolle des Solution Architect; schulte Tester in Cloud-native-Prinzipien
+  \item R: Schloss die Prüfungslücke und steigerte die Lieferqualität
+\end{tightlist}
+
+\blockgap
+
+% ================= ACME =================
+\entrytwoline{05.2020 -- 03.2023}{Bereichsleiter Serverplattformen, Bundesamt für Beispielwesen (ACME), Chur}{}
+\vspace{-8pt}
+\companydesc{Das ACME betreibt kritische, hochverfügbare Infrastruktur mit hohen Anforderungen an Sicherheit und Vertraulichkeit.}
+
+\begin{tightlist}
+  \item S: Mitglied der Abteilungsleitung IT-Betrieb (Linux-Systeme und Datenbanken)
+  \item S: Mitglied im Architekturboard des Amts
+  \item T: Verantwortete Strategie, Finanzen und Betrieb der Plattformen
+  \item A: Sponsorte mehrere PRIMA-Projekte
+  \item A: Vertrat das Amt in einer Initiative zur digitalen Transformation des Bundes
+  \item A: Führte eine WTO-konforme Beschaffung einer strategischen Software durch
+  \item R: Erreichte 99,9\,\% Verfügbarkeit im 24/7-Betrieb mit Pikettdienst
+\end{tightlist}
+
+\blockgap
+
+% ================= CORVEX =================
+\companyheader{03.2011 -- 04.2020}{Corvex Systems AG, Genf}
+\companydesc{Die Corvex Systems AG ist Anbieterin von Banking-Software, Digital-Channel-Modulen und Managed Services.}
+
+\smallgap
+\entryline{12.2019 -- 04.2020}{Cluster Lead Client Front End \& Payments}
+
+\begin{tightlist}
+  \item S: Leitete die Cluster Client Front End \& Payments (Berichtslinie an den Divisionsleiter)
+  \item T: Überwachte das F\&E-Budget des Portfolios (ca. 45 FTE)
+  \item A: Steuerte Prioritäten und Abhängigkeiten im Scrum of Scrums
+  \item R: Stimmte die Prioritäten mit den Product Domain Owners über internationale Teams ab
+\end{tightlist}
+
+\blockgap
+
+\entryline{10.2017 -- 11.2019}{Head Account Lifecycle \& Data Model}
+
+\begin{tightlist}
+  \item S: Leitete Account Lifecycle und Data Model (Berichtslinie an den Head of CRM)
+  \item S: Product Owner für rund 60 Komponenten im Bereich Stammdaten
+  \item T: Verantwortete die strategische Ausrichtung auf die CRM-Domäne und das Budget
+  \item T: Führte 8--12 FTE on- und offshore
+  \item A: Entwickelte die Domäne iterativ mit kleinen und grossen Projekten weiter
+  \item A: Setzte Kundenprojekte und Change Requests um
+  \item R: Migrierte mehrere Kundensysteme erfolgreich auf das neue Data Model
+\end{tightlist}
+
+\blockgap
+
+\entryline{10.2014 -- 09.2017}{Senior Software Engineer}
+
+\begin{tightlist}
+  \item S: Verantwortete mehrere Komponenten im Bereich Stammdaten
+  \item A: Entwickelte ein Sicherheitsmodell für ein Projekt mit 4 Banken in Österreich
+  \item R: Führte mehrere Kundenmigrationen erfolgreich auf das neue Data Model durch
+\end{tightlist}
+
+\blockgap
+
+\entryline{03.2011 -- 09.2014}{Business Consultant}
+
+\begin{tightlist}
+  \item T: Führte Stammdatenmigrationen durch
+  \item A: Beriet zum Quellensteuer-Framework und setzte es um
+\end{tightlist}
+
+\blockgap
+
+% ================= MERIDIAN ADVISORY =================
+\entrytwoline{10.2009 -- 02.2011}{Business Consultant, Meridian Advisory AG, Bellinzona}{}
+\vspace{-8pt}
+\companydesc{Meridian Advisory ist ein auf den Sektor KTR spezialisiertes Beratungsunternehmen.}
+
+\begin{tightlist}
+  \item A: Integrierte Netzwerkvisualisierungen in CRM-Systeme und Datenbestände von Kunden
+\end{tightlist}
+
+\blockgap
+
+% ================= FRÜHE LAUFBAHN =================
+\entrythreeline{2006 -- 2010}{Software- \& Applikationsentwickler}{@ Institut für Beispielstudien, Universität Musterstadt}{Selbstständiger Berater / Nexa Consulting, Zürich}
+
+% ================= AUSBILDUNG =================
+\sectionhead{Ausbildung}
+
+\entrytwoline{2008 -- 2010}{Master of Arts, Universität Musterstadt}{Wirtschaftsinformatik und Betriebswirtschaft}
+
+\blockgap
+
+\entrytwoline{2005 -- 2008}{Bachelor of Arts, Universität Musterstadt}{Betriebswirtschaftslehre}
+
+% ================= WEITERBILDUNG =================
+\sectionhead{Weiterbildung}
+
+\entryline{2026}{Summit 2, Führungsausbildung der Nordwind Group}
+\entryline{2021}{Führungsseminar II}
+
+% ================= SPRACHEN =================
+\sectionhead{Sprachen}
+
+Deutsch: Muttersprache \textbar\ Englisch: verhandlungssicher (C1) \textbar\ Französisch: fliessend (B2)
+
+\end{document}

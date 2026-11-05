@@ -1,17 +1,17 @@
 # S.T.A.R. CV
 
-CV Template in LaTEX following a S.T.A.R. schema created with the inspiration and some help of [rockstar.jobs](https://rockstar.jobs/blog/the-perfect-resume).
+LaTeX CV template following the S.T.A.R. schema, inspired by and built with help from [rockstar.jobs](https://rockstar.jobs/blog/the-perfect-resume).
 
 ## Why LaTEX
 
-Writing in Markdown has been my preferred way to document my knowledge since I started to get invested in AI. But I had to learn, after some experiments with pandoc, that formatting in Markdown is not easy and is often similar as in LaTEX. I wrote the first version in a traditional WYSWYG text processor (docx and/or pages). And out of the blue I asked one night the AI bot of trust to create a LaTEX version out of it. And it delivered, pretty nicely.
-I had to realise that the LaTEX template contained a very structured approach and that the agent or LLM could grasp the structure very well. Additionally it is offering the option to improve the layout very finegrained and produce very small files that are well processable by machines, because they will realise the PDF has been produced from code and not from an image.
+I have documented my knowledge in Markdown since I got into AI. After experimenting with pandoc, I learned that Markdown formatting is hard and often no simpler than LaTeX. I wrote the first CV version in a WYSIWYG processor (docx, Pages). One night, I asked an AI assistant to convert it to LaTeX. It delivered, nicely.
+The LaTeX template turned out to be highly structured, and LLMs grasp that structure well. LaTeX also gives fine-grained layout control and produces small files that machines process easily, because the PDF contains real text generated from code, not an image.
 
 ## Why the S.T.A.R. format?
 
-Because it is highly regarded in the tech industry, especially when you are looking at international providers and it delivers very clear structure to the reader. Similar to other frameworks for communication that found a revival with the age of AI like OODA or others.
+It is highly regarded in tech, especially among international employers, and gives the reader a context and a clear structure and. Like other communication frameworks, such as OODA, it has found new relevance in the age of AI.
 
-The description from the [AWS guideline for interviews](https://www.amazon.jobs/content/en/how-we-hire/interview-loop) is the following:
+The [AWS guideline for interviews](https://www.amazon.jobs/content/en/how-we-hire/interview-loop) describes it as follows:
 
 >__The STAR method__
 >
@@ -48,3 +48,12 @@ The description from the [AWS guideline for interviews](https://www.amazon.jobs/
 >How did things turn out? What happened as a result of your actions? Don’t be shy—share what you accomplished and what you learned. If you have any numbers or specific outcomes to back it up, even better.
 >
 >Frame your answers in relation to the Leadership Principles. And remember, not every story has to be a success. We know that failure is part of innovation. What matters is what you learned and how you grew.
+
+## Examples
+
+Two rendered examples with fictional content show the templates in use:
+
+- [`examples/star-cv-template.pdf`](examples/star-cv-template.pdf): English
+- [`examples/star-cv-swiss-template.pdf`](examples/star-cv-swiss-template.pdf): German (Swiss spelling), with a photo placeholder
+
+Reading note: each bullet point is prefixed with its S.T.A.R. letter: **S:** Situation (context and scope), **T:** Task (responsibility), **A:** Action (what was done), **R:** Result (measurable outcome). Within each role, the bullets follow this order. All names, companies, places and figures are fictional.

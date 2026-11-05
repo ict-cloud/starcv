@@ -1,17 +1,17 @@
 # S.T.A.R. CV
 
-CV Template in LaTEX following a S.T.A.R. schema created with the inspiration and some help of [rockstar.jobs](https://rockstar.jobs/blog/the-perfect-resume).
+LaTeX-Vorlage für einen Lebenslauf nach dem S.T.A.R.-Schema, inspiriert von und entstanden mit Hilfe von [rockstar.jobs](https://rockstar.jobs/blog/the-perfect-resume).
 
-## Why LaTEX
+## Warum LaTeX
 
-Writing in Markdown has been my preferred way to document my knowledge since I started to get invested in AI. But I had to learn, after some experiments with pandoc, that formatting in Markdown is not easy and is often similar as in LaTEX. I wrote the first version in a traditional WYSWYG text processor (docx and/or pages). And out of the blue I asked one night the AI bot of trust to create a LaTEX version out of it. And it delivered, pretty nicely.
-I had to realise that the LaTEX template contained a very structured approach and that the agent or LLM could grasp the structure very well. Additionally it is offering the option to improve the layout very finegrained and produce very small files that are well processable by machines, because they will realise the PDF has been produced from code and not from an image.
+Seit meinem Einstieg in die KI dokumentiere ich mein Wissen in Markdown. Nach Experimenten mit Pandoc musste ich feststellen, dass die Formatierung in Markdown anspruchsvoll und oft nicht einfacher als in LaTeX ist. Die erste Version meines Lebenslaufs schrieb ich in einer WYSIWYG-Textverarbeitung (docx, Pages). Eines Abends bat ich einen KI-Assistenten, daraus eine LaTeX-Version zu erstellen. Das Ergebnis überzeugte.
+Die LaTeX-Vorlage erwies sich als stark strukturiert, und LLMs erfassen diese Struktur gut. Zudem erlaubt LaTeX eine feingranulare Steuerung des Layouts und erzeugt kleine Dateien, weil das PDF aus Code generiert ist und nicht aus einem Foto/Scan entstanden ist. Dies können Maschinen leicht verarbeiten.
 
-## Why the S.T.A.R. format?
+## Warum das S.T.A.R.-Format?
 
-Because it is highly regarded in the tech industry, especially when you are looking at international providers and it delivers very clear structure to the reader. Similar to other frameworks for communication that found a revival with the age of AI like OODA or others.
+Es geniesst in der Tech-Branche hohes Ansehen, besonders bei internationalen Arbeitgebern, und gibt der Leserschaft eine klare Struktur und Kontext. Wie andere Kommunikationsframeworks, etwa OODA, gewinnt es im KI-Zeitalter neue Bedeutung.
 
-The description from the [AWS guideline for interviews](https://www.amazon.jobs/content/en/how-we-hire/interview-loop) is the following:
+Die [AWS-Richtlinie für Interviews](https://www.amazon.jobs/content/en/how-we-hire/interview-loop) beschreibt es wie folgt:
 
 >__The STAR method__
 >
@@ -48,3 +48,12 @@ The description from the [AWS guideline for interviews](https://www.amazon.jobs/
 >How did things turn out? What happened as a result of your actions? Don’t be shy—share what you accomplished and what you learned. If you have any numbers or specific outcomes to back it up, even better.
 >
 >Frame your answers in relation to the Leadership Principles. And remember, not every story has to be a success. We know that failure is part of innovation. What matters is what you learned and how you grew.
+
+## Beispiele
+
+Zwei gerenderte Beispiele mit fiktivem Inhalt zeigen die Vorlagen im Einsatz:
+
+- [`examples/star-cv-template.pdf`](examples/star-cv-template.pdf): Englisch
+- [`examples/star-cv-swiss-template.pdf`](examples/star-cv-swiss-template.pdf): Deutsch (Schweizer Rechtschreibung), mit Platzhalter für das Foto
+
+Lesehinweis: Jeder Aufzählungspunkt trägt als Präfix seinen S.T.A.R.-Buchstaben: **S:** Situation (Kontext und Umfang), **T:** Task (Verantwortung), **A:** Action (Handlung), **R:** Result (messbares Ergebnis). Innerhalb jeder Rolle folgen die Punkte dieser Reihenfolge. Alle Namen, Unternehmen, Orte und Zahlen sind fiktiv.
